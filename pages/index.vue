@@ -4,17 +4,6 @@
             <p class="h1">
                 Выберите категорию услуг
             </p>
-
-            <!--      <div class="card col-5 text-white bg-primary mb-3" style="max-width: 18rem;">-->
-            <!--        <div class="card-header"> </div>-->
-            <!--        <div class="card-body">-->
-            <!--          <h5 class="card-title" style="white-space: nowrap"></h5>-->
-            <!--          <p class="card-text" style="white-space: nowrap" >Продукты от диетолога</p>-->
-            <!--          <p class="card-text">-->
-            <!--            500p.</p>-->
-            <!--        </div>-->
-            <!--      </div>-->
-
             <div v-for="catalog in catalogs" class="my-3">
                 <p class="h2">{{catalog.name}}</p>
                 <div class="job-line row flex-row flex-nowrap text-white">
@@ -41,12 +30,12 @@
                             </tr>
                         </table>
                     </div>
-                    <p class="m-auto">
-                        <a class="btn btn-primary" @click.prevent="selectService"><span
+                    <p class="m-auto w-75">
+                        <a class="btn btn-primary btn-block" @click.prevent="selectService"><span
                                 class="h4 text-white">Выбрать услугу</span></a>
                     </p>
                     <div class="my-2">
-                        <p>
+                        <p class="text-black-50">
                             Дальше мы зададим несколько уточняющих вопросов. Ответы помогут понять, какие инструменты и материалы взять с собой. Работа будет сделана быстрее.</p>
                     </div>
                 </div>
@@ -54,7 +43,7 @@
             <div v-else>
                 <h1>Заказ</h1>
                 <div class="card card-body">
-                    <h2 class="text-color">{{getService.name}}</h2>
+                    <p class="h1 text-color mb-3 mt-2">{{getService.name}}</p>
                     <p>{{getService.description}}</p>
                     <div class="mx-2 my-3 bg-light p-2" style="border-radius: 15px">
                         <table width="90%">
@@ -69,22 +58,22 @@
                         <form>
                             <label>Пожелания и уточнения</label>
                             <textarea rows="7" placeholder="Укажите ваши пожелания и предпочтения"></textarea>
-                            <div class="row text-black-50">
+                            <div class="m-0 row text-black-50">
                                 <div class="cube text-color">+</div>
                                 <span class="my-auto">Выберите файл в галерее и загрузите, если это требуется для заказа</span>
                             </div>
-                            <p class="h4">Где и кому</p>
+                            <p class="h4 pt-2">Где и кому</p>
                             <label>Улица, дом, корпус</label>
-                            <input type="text"/>
+                            <input type="text" placeholder="Куда нам ехать"/>
                             <label>Подъезд, этаж, квартира, офис</label>
-                            <input type="text"/>
+                            <input type="text" placeholder="Как попасть внутрь"/>
                             <label>Имя</label>
-                            <input type="text"/>
+                            <input type="text" placeholder="Укажите Ваше имя"/>
                             <label>Email</label>
-                            <input type="text"/>
+                            <input type="text" placeholder="mail@example.com"/>
                         </form>
-                        <p class="m-auto">
-                            <a class="btn btn-primary text-white">Оформить заказ</a>
+                        <p class="w-75 m-auto">
+                            <a class="btn btn-primary btn-block text-white">Оформить заказ</a>
                         </p>
                     </div>
                     <p>
@@ -92,7 +81,7 @@
                     <p>Стоимость услуги оплачивается на следующем шаге онлайн.</p>
                     <p>
                         В стоимость заказа не входит стоимость продуктов или товаров. Оплата происходит по чеку при получении.</p>
-                    <p>Отправляя заказ, вы ринимаете условия <span
+                    <p>Отправляя заказ, вы принимаете условия <span
                             class="btn-link pointer">Пользовательского соглашения</span>
                     </p>
                 </div>
@@ -314,11 +303,19 @@
         height: 60px;
         font-size: 32px;
         text-align: center;
-        border: 2px gray solid;
+        border: 1px black solid;
+    }
+
+    div {
+        margin: 0;
+        padding: 0;
     }
 
     input, textarea {
         width: 100%;
+        border-radius: 3px;
+        border: 1px black solid;
+        padding: 5px 9px;
     }
 
     label {
