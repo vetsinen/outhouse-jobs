@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="row flex-row flex-nowrap fixed-bottom"
-         style="font-size:3em; background-color: white; margin: 15px 5px">
+         style="font-size:3em; background-color: oldlace; margin: 0 0">
       <nuxt-link active-class="active" class="nav-link col" to="/" title="Catalogue">
         &#127911;
       </nuxt-link>
@@ -28,9 +28,8 @@
     box-sizing: border-box;
     margin: 10px;
   }
-
-  body {
-
+  .nav-link {
+    text-align: center;
   }
 
 </style>
