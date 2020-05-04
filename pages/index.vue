@@ -4,7 +4,7 @@
       Выберите категорию услуг
     </p>
 
-    <div class="row flex-row flex-nowrap">
+    <div class="job-line row flex-row flex-nowrap">
       <div class="job-item col-5">
         <p>Продукты от диетолога</p>
         <p>500p.</p>
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="row flex-row flex-nowrap">
+    <div class="job-line row flex-row flex-nowrap">
       <div class="job-item col-5">
         <p>Продукты от диетолога</p>
         <p>500p.</p>
@@ -84,10 +84,21 @@
     text-align: center;
   }
 
+  .job-line {
+    overflow-y: auto;
+    /*-ms-overflow-style: none;*/
+  }
+  .job-line::-webkit-scrollbar {
+    display: none;
+  }
+
   .job-item {
     word-break: normal;
     background-color: dodgerblue;
     border-radius: 10px;
   }
+
+
+
 
 </style>
