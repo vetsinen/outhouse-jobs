@@ -17,10 +17,10 @@
         <div v-for="catalog in catalogs" class="my-3">
             <p class="h2">{{catalog.name}}</p>
             <div class="job-line row flex-row flex-nowrap text-white">
-                <div v-for="service in catalog.services" class="job-item col-5 py-3 position-relative">
+                <div v-for="service in catalog.services" class="job-item col-5 py-3 position-relative pointer">
                     <p class="h2">{{service.name}}</p>
                     <p></p>
-                    <p class="position-absolute" style="bottom: 0; right: 0">{{service.price}}p.</p>
+                    <p class="position-absolute h4" style="bottom: 0; right: 0">{{service.price}}p.</p>
                 </div>
             </div>
         </div>
@@ -178,6 +178,7 @@
         border-radius: 10px;
         min-width: 250px;
     }
-
-
+    .pointer {
+        cursor: pointer;
+    }
 </style>

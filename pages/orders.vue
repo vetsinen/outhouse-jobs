@@ -3,7 +3,7 @@
         <h1>Мои заказы</h1>
         <div v-for="order in orders" class="my-3">
             <div class="card">
-                <div class="card-header bg-white text-color">
+                <div class="card-header bg-white h2 text-color">
                     {{order.category_name}}
                 </div>
                 <div class="card-body">
