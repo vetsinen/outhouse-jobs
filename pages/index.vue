@@ -1,35 +1,20 @@
 <template>
   <div class="container-fluid">
-    <p>
-      Выберите категорию услуг
-    </p>
+    <h3>
+      Выберите, что нужно сделать
+    </h3>
 
-    <!--      <div class="card col-5 text-white bg-primary mb-3" style="max-width: 18rem;">-->
-    <!--        <div class="card-header"> </div>-->
-    <!--        <div class="card-body">-->
-    <!--          <h5 class="card-title" style="white-space: nowrap"></h5>-->
-    <!--          <p class="card-text" style="white-space: nowrap" >Продукты от диетолога</p>-->
-    <!--          <p class="card-text">-->
-    <!--            500p.</p>-->
-    <!--        </div>-->
-    <!--      </div>-->
-
-    <div class="job-line row flex-row flex-nowrap">
-      <div v-for="item in items" class="job-item col-5">
-        <p>{{item}}</p>
-        <p>500p.</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="card col-12 text-white bg-primary mb-3" style="min-width: 90%;">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <h5 class="card-title">Побегать с вашей черепахой</h5>
-          <p class="card-text">100р.</p>
+    <section v-for="category in categories">
+      <h2>услуги</h2>
+      <div class="job-line row flex-row flex-nowrap">
+        <div v-for="item in items" class="job-item col-5">
+          <p>{{item}}</p>
+          <p>500p.</p>
         </div>
       </div>
-    </div>
+
+    </section>
+
 
     <div class="job-line row flex-row flex-nowrap">
       <div class="job-item col-7">
@@ -67,6 +52,13 @@
     data() {
       return {
         value: 42,
+        categories:
+          [
+            {"Покупки домой": {}},
+            {"Доставка цветов":{}},
+            {"Утилизация мусора": {}},
+            {"Уход за животным": {}}
+          ],
         items: ['Продукты от диетолога', 'Продукты от шеф-повара', 'Продукты от гастронома №4']
       }
     }
