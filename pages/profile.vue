@@ -17,4 +17,8 @@
     .pointer {
         cursor: pointer;
     }
+    div {
+        margin: 0;
+        padding: 0;
+    }
 </style>

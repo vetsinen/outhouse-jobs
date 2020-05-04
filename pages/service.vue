@@ -73,7 +73,7 @@
                             <input type="text" placeholder="mail@example.com"/>
                         </form>
                         <p class="w-75 m-auto">
-                            <a class="btn btn-primary btn-block text-white">Оформить заказ</a>
+                            <a class="btn btn-primary btn-block text-white" :href="'/orders'">Оформить заказ</a>
                         </p>
                     </div>
                     <p>

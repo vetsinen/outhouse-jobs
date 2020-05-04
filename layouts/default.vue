@@ -67,7 +67,7 @@
     .nav-bottom {
         background: white;
         margin-bottom: 0;
-        border-radius: 50px;
+        border-radius: 50px 50px 0 0;
         border-bottom: none;
         box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, .5);
     }

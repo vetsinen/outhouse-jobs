@@ -54,4 +54,9 @@
     .text-color {
         color: #1F5BFF;
     }
+
+    div {
+        margin: 0;
+        padding: 0;
+    }
 </style>
