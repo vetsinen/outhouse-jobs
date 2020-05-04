@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{222:function(t,e,n){"use strict";n.r(e);var c={components:{},created:function(){this.$router.push("/service")}},r=n(39),component=Object(r.a)(c,(function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"container-fluid"})}),[],!1,null,null,null);e.default=component.exports}}]);
