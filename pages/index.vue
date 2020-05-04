@@ -92,7 +92,8 @@
                     <p>Стоимость услуги оплачивается на следующем шаге онлайн.</p>
                     <p>
                         В стоимость заказа не входит стоимость продуктов или товаров. Оплата происходит по чеку при получении.</p>
-                    <p>Отправляя заказ, вы ринимаете условия <span class="btn-link pointer">Пользовательского соглашения</span>
+                    <p>Отправляя заказ, вы ринимаете условия <span
+                            class="btn-link pointer">Пользовательского соглашения</span>
                     </p>
                 </div>
             </div>
@@ -234,6 +235,13 @@
                     }
                 ]
             }
+        },
+        beforeRouteUpdate(to, from, next) {
+            if (typeof to.id === 'undefined') {
+                this.isService = false;
+                this.isFull = false;
+            }
+            next()
         },
         created() {
             if (typeof this.$route.params.id !== 'undefined') {
