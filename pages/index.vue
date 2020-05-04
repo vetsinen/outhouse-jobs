@@ -174,9 +174,9 @@
 
     .job-item {
         word-break: normal;
-        background-color: dodgerblue;
+        background-color: #1F5BFF;
         border-radius: 10px;
-        min-width: 300px;
+        min-width: 250px;
     }
 
 
